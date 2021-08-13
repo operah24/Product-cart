@@ -5,7 +5,7 @@ body{
 .product{
   display: flex;
   flex-wrap: wrap;
-  
+   cursor: pointer;
 
 }
 h4 {
@@ -39,5 +39,5 @@ h4 {
 
 .name:hover, .price:hover{
   color: blue;
-  cursor: pointer;
+ 
 }
