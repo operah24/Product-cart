@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+.nav{
+    display: flex;
+    width: 100%;
+}
+.logo{
+    display: flex;
+}
+img{
+    margin-top: 5px;
+}
+p{
+    font-family: 'Noto Serif',serif;
+    color: #181819;
+    font-size: 20px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+li{
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Noto Serif',serif;
+    font-size: 15px;
+    color: #6C757D;
+}
+a:hover{
+    color: #5056B3;
+}
+
+.others{
+    display: flex;
+    
+}
+.others > input[type=text]{
+    border-radius: .25rem;
+    padding: 6px;
+    border: 1px solid #CED4DA;
+    font-size: 17px;
+    line-height:1.5;
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+span{
+    color: red;
+    font-family: 'Noto Serif',serif;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    background-color:#00AD45;
+    color: #FFFFF3;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-family: 'Noto Serif',serif;
+}
+
+.navicon{
+    display: none;
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav,
+    .links,
+    .others,
+    .btn {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 3px;
+    }
+
+    .links,
+    .others,
+    .btn {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-bottom: 5px;
+    }
+
+    .navicon {
+        display: block;
+        margin-top: 3em;
+        margin-right: 1em;
+    }
+
+}

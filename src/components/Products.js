@@ -3,13 +3,13 @@ import { product } from '../data'
 const Products = () => {
     return (
         <div>
-            <h4>AVAILABLE PRODUCE</h4>
+            <p className="head">AVAILABLE PRODUCE</p>
             <div className="product">
                 {product.map((items) => (
                 <div className="products">
                     <img src={items.product_img} alt="pro" className="image"/>
-                    <h2 className="name">{items.name} </h2>
-                    <h3 className="price">&#8358;{ items.price}</h3>
+                    <p className="name">{items.name} </p>
+                    <p className="price">&#8358;{ items.price}</p>
                 </div>
                 ))}
             </div>
